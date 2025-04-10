@@ -2,4 +2,4 @@
 
 install:
 	./build
-	sudo install -v -m511 ./nvchad /usr/local/bin/nvchad
+	sudo install -v -m555 ./nvchad /usr/local/bin/nvchad

@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $# -gt 0 ]] ; then
-  TARGET=$1
+  TARGET=$(realpath $1)
 else
   echo 'useage: '
   echo "$0 /path/to/target/to/edit"
