@@ -1,0 +1,5 @@
+#!/bin/bash
+TMP=$(mktemp -d)
+cd ${TMP}
+cp /usr/local/lib/nvchad_dockerfile ./Dockerfile
+docker build -t nvchad:latest .

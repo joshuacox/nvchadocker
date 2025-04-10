@@ -12,4 +12,4 @@ mkdir -p ${LOCAL_DIR}
 docker run -w /root -it --rm \
   -v ${LOCAL_DIR}:/home/nvchad/.local \
   -v ${TARGET}:/home/nvchad/target \
-  nvchad:latest sh -uelic 'nvim /home/nvchad/target'
+  nvchad:latest bash -ec 'nvim /home/nvchad/target'
