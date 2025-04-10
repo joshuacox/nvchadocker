@@ -3,7 +3,7 @@
 Want to try  out nvchad without messing with your existing nvim config?
 
 ```
-./nvchad_build && ./nvchad /tmp/testfile
+./build && ./nvchad /tmp/testfile
 ```
 
 # Install
@@ -16,4 +16,5 @@ make
 
 This will build the docker image locally, and then place the nvchad files in `/usr/local/bin`
 
-now you can use `nvchad` and `nvchad_build` anywhere.
+now you can use `nvchad` anywhere.
+also to update there is the command `nvchad_build` anywhere.
