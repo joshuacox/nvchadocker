@@ -1,0 +1,16 @@
+#!/bin/bash
+if [[ $# -gt 0 ]] ; then
+  echo $@
+  TARGET=$1
+else
+  echo 'useage: '
+  echo "$0 /path/to/target/to/edit"
+  exit 0
+fi
+: ${LOCAL_DIR:=/${HOME}/.nvchad/local}
+mkdir -p ${LOCAL_DIR}
+
+docker run -w /root -it --rm \
+  -v ${LOCAL_DIR}:/home/nvchad/.local \
+  -v ${TARGET}:/home/nvchad/target \
+  nvchad:latest sh -uelic 'nvim /home/nvchad/target'
