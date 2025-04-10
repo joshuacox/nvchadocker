@@ -1,6 +1,5 @@
 #!/bin/bash
 if [[ $# -gt 0 ]] ; then
-  echo $@
   TARGET=$1
 else
   echo 'useage: '
